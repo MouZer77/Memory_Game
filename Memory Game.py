@@ -101,7 +101,7 @@ class Game:
 
     def check_location(self, time):
         while True:
-            guess = input(f"What's the location of your {time} Card?")
+            guess = input(f"What's the location of your {time} Card?: ")
             if guess.upper() in self.location:
                 return guess.upper()
             else:
